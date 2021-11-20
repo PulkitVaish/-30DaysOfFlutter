@@ -16,7 +16,13 @@ class HomePage extends StatelessWidget {
         drawer: Drawer(),
         body: Center(
           child: Container(
-            child: Text("EA Sports ${variable}: Its in the game!"),
+            child: Text(
+              "EA Sports ${variable}: Its in the game!",
+              style: TextStyle(
+                fontSize: 30,
+                color: Colors.amber,
+              ),
+            ),
           ),
         ));
   }
