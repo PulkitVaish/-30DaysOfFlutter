@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foundation_app/screens/home_page.dart';
 import 'package:foundation_app/screens/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,8 @@ class MyApp extends StatelessWidget {
       // By default theme defines properties for light mode
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
+        fontFamily: GoogleFonts.monofett().fontFamily,
+        // primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
       // themeMode: ThemeMode.dark,
       initialRoute: "/login",
